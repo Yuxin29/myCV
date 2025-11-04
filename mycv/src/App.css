@@ -5,7 +5,35 @@
   text-align: center;
 }
 
-.logo {
+
+/*like About Education*/
+h2 {
+  text-align: left;
+}
+
+/*normally a rem is 16 px in html*/
+h4 {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;    /* Make the job title bold */
+  color: black;         /* Set the color to black */
+  margin-right: 1rem;   /* Add some space between the title and the location */
+}
+
+h4 span{
+  font-weight: normal;  /* Make the location text normal (non-bold) */
+  color: black;         /* Ensure the location text is black */
+  font-size: inherit;   /* Inherit the font size of the h4 */
+}
+
+/*normal txt paragraph*/
+p {
+  text-align: left;
+  color: #555555;
+}
+
+/*no need, from vite templete*/
+/* .logo {
   height: 6em;
   padding: 1.5em;
   will-change: filter;
@@ -39,4 +67,4 @@
 
 .read-the-docs {
   color: #888;
-}
+} */
