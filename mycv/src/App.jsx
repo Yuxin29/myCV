@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 import profilePic from './assets/profile.jpg';
+import Gallery from './Gallery';
 
 function App() {
   return (
@@ -15,6 +16,23 @@ function App() {
       color: "#222",
       padding: "20px"
     }}>
+
+      {/* 🟢 第二步：在这里添加按钮 */}
+      <div style={{ textAlign: "right", marginBottom: "10px" }}>
+        <a
+          href="#gallery"
+          style={{
+            textDecoration: "none",
+            backgroundColor: "#0b76ff",
+            color: "white",
+            padding: "8px 14px",
+            borderRadius: "6px",
+            fontWeight: "bold"
+          }}
+        >
+          📸 Gallery Suvisaaristo: My Photography
+        </a>
+      </div>
 
       <img 
         src={profilePic} 
@@ -136,8 +154,12 @@ function App() {
       <h2>Interests</h2>
       <p>GIS and mapping, Urban data, Visualization, Laser-cutting, 3D printing, Photography</p>
 
+      {/* 🩵 在这里添加 Gallery 组件 */}
+      <Gallery />
+
 
     </div>
+    
   )
 }
 
