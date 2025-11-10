@@ -14,7 +14,7 @@ h2 {
 h4 {
   display: flex;
   justify-content: space-between;
-  font-weight: bold;    /* Make the job title bold */
+  font-weight: normal;    /* Make the job title bold */
   color: black;         /* Set the color to black */
   margin-right: 1rem;   /* Add some space between the title and the location */
 }
