@@ -17,12 +17,13 @@ function Gallery() {
         <section id="gallery" className="gallery-section">
         <h2 className="gallery-title">Photography Gallery</h2>
         <div className="gallery-grid">
-            {samplePhotos.map((url, i) => (
+            <p> Under construction.</p>
+            {/* {samplePhotos.map((url, i) => (
             <figure key={i} className="photo-card">
                 <img src={url} alt={`photo-${i}`} loading="lazy" />
                 <figcaption>Photo {i + 1}</figcaption>
             </figure>
-            ))}
+            ))} */}
         </div>
         </section>
     );
