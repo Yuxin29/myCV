@@ -31,3 +31,12 @@ p {
   color: #555555;
 }
 
+/*projects and contact  */
+.left-bottom-link {
+  background-color: "#b5e4ffff";
+  color: blue;
+  padding: "8px 14px";
+  font-weight: "bold";
+}
+
+

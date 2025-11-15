@@ -1,0 +1,3 @@
+to gave a new page in React, I need to install React Router
+First, to install it, Use:
+npm install react-router-dom
