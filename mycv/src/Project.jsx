@@ -1,10 +1,12 @@
 import React from "react";
 import './Project.css'
 
-import solongVideo from "./assets/solong.webm";
 import libftImage from "./assets/libft.png";
-import miniRTVideo from "./assets/miniRT.webm";
+import pushswapVideo from "./assets/pushswap.webm";
 import minishellImage from "./assets/minishell.png";
+import miniRTVideo from "./assets/miniRT.webm";
+import webserverImage from "./assets/webserver.png";
+import solongVideo from "./assets/solong.webm";
 
 function Project() {
     return (
@@ -33,6 +35,37 @@ function Project() {
                     </p>
                 </div>
             </div>
+
+
+            <div className="project-card">
+                <video
+                    className="project-video"
+                    src={pushswapVideo}
+                    controls
+                    loop
+                    muted
+                    playsInline
+                    preload="metadata"
+                >
+                    Your browser does not support the video tag.
+                </video>
+
+                <div className="project-text">
+                    <h4>
+                        <a href="https://github.com/Yuxin29/my_miniRT.git"
+                           target="_blank"
+                           rel="noreferrer"
+                           style={{ textDecoration: "none", color: "inherit" }}>
+                           <b>Radix Sort (C)</b>
+                        </a>
+                        <span> — sorting challenge using two stacks and minimal operations.</span>
+                    </h4>
+                    <p>
+                        Push_Swap is an algorithmic C project where I wrote a solver that sorts a sequence of integers using only two stacks and the allowed operations (sa, sb, ss, pa, pb, ra, rb, rr, rra, rrb, rrr). I implemented robust input parsing and error handling, small-input optimized routines, and a scalable strategy (radix) for larger inputs. The project strengthened my skills in algorithm design, complexity analysis, low-level C programming, and writing tests that verify correctness and measure move-efficiency.
+                    </p>
+                </div>
+            </div>
+
 
             <div className="project-card">
                 <img
@@ -82,6 +115,25 @@ function Project() {
                     </h4>
                     <p>
                         MMiniRayTracer is a lightweight ray tracer built using C and the MLX42 graphics library. The project involves rendering simple 3D scenes by simulating the behavior of light rays as they interact with objects. I implemented basic features such as ray-object intersection, reflection, and simple lighting effects. This project helped me improve my problem-solving skills in computer graphics and algorithms for 3D rendering.
+                    </p>
+                </div>
+            </div>
+
+            <div className="project-card">
+                <img
+                    className="project-media"
+                    src={webserverImage}
+                    alt="Libft project preview"
+                />
+
+                <div className="project-text">
+                    <h4>
+                        <b>Webserver (C++)</b>
+                        <span> — C++ Web Server built from scratch.</span>
+                    </h4>
+                    <p>
+                        WebServer is a lightweight HTTP server implemented in C++ that mimics the core behavior of real-world web servers. In a team of three, forcucing individually on the server infrastructure, configuration parsing and full request–response cycle(me), including HTTP request parsing, routing logic, and response generation.                      
+                        Throughout this project, Ilearned a great deal about teamwork, Git branch management, and coordinating development workflows in a multi-developer environment.
                     </p>
                 </div>
             </div>
