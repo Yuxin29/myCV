@@ -17,6 +17,7 @@ function Contact() {
             marginBottom: "1rem" 
             }} 
             />
+            <p>A contact Form under construction</p>
             <p>feel free to reach out me</p>
         </div>
     );

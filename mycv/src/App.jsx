@@ -9,7 +9,7 @@ import Contact from './Contact';
 import Gallery from './Gallery';
 import Cv from './Cv';
 
-function App() {
+function MainPage() {
   return (
     <div style={{
       maxWidth: "800px",
@@ -19,40 +19,48 @@ function App() {
       color: "#222",
       padding: "20px"
     }}>
+      <div style={{
+        display: "flex",
+        justifyContent: "space-between",
+        marginBottom: "10px"
+      }}>
+        {/* Left group */}
+        <div style={{ display: "flex", gap: "30px" }}>
+          <a href="#project" className="left-bottom-link">Projects</a>
+          <a href="#contact" className="left-bottom-link">Contact</a>
+        </div>
 
-    <div style={{ 
-      display: "flex", 
-      justifyContent: "space-between", 
-      marginBottom: "10px"
-    }}>
-    {/* Left group */}
-    <div style={{ display: "flex", gap: "30px" }}>
-      <a href="#project" className="left-bottom-link"> Projects</a>
-      <a href="#contact" className="left-bottom-link">Contact</a>
-    </div>
+        {/* Right item: Gallery page */}
+        <Link
+          to="/gallery"
+          style={{
+            backgroundColor: "#001c2cff",
+            color: "white",
+            padding: "8px 14px",
+            fontWeight: "bold",
+            textDecoration: "none"
+          }}
+        >
+          My hobby
+        </Link>
+      </div>
 
-    {/* Right item */}
-    <a
-      href="#gallery"
-      style={{
-        backgroundColor: "#001c2cff",
-        color: "white",
-        padding: "8px 14px",
-        fontWeight: "bold",
-        textDecoration: "none"
-      }}
-    >
-      My hobby
-    </a>
-
-    </div>
-      {/* 🩵 adding all the sub components */}
+      {/* Main page content */}
       <Cv/>
       <Project/>
       <Contact/>
-      <Gallery/>
     </div>
-  )
+  );
 }
 
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+        <Route path="/gallery" element={<Gallery />} />
+      </Routes>
+    </BrowserRouter>
+  );
+}
 export default App

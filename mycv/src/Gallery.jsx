@@ -12,21 +12,23 @@ const samplePhotos = [
     "https://picsum.photos/id/1025/800/600"
 ]
 
+
 function Gallery() {
-    return (
-        <section id="gallery" className="gallery-section">
-        <h2 className="gallery-title">Photography Gallery</h2>
-        <div className="gallery-grid">
-            <p> Under construction.</p>
-            {/* {samplePhotos.map((url, i) => (
-            <figure key={i} className="photo-card">
-                <img src={url} alt={`photo-${i}`} loading="lazy" />
-                <figcaption>Photo {i + 1}</figcaption>
-            </figure>
-            ))} */}
-        </div>
-        </section>
-    );
+  return (
+    <div style={{ padding: "20px", maxWidth: "800px", margin: "40px auto" }}>
+      <h3>My Photography Gallery</h3>
+      <p>Under construction: Coming soon.</p>
+      {/* Optional: uncomment to show sample photos */}
+      {/* <div className="gallery-grid">
+        {samplePhotos.map((url, i) => (
+          <figure key={i} className="photo-card">
+            <img src={url} alt={`photo-${i}`} loading="lazy" />
+            <figcaption>Photo {i + 1}</figcaption>
+          </figure>
+        ))}
+      </div> */}
+    </div>
+  );
 }
 
 export default Gallery
