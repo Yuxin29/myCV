@@ -7,6 +7,7 @@ import minishellImage from "./assets/minishell.png";
 import miniRTVideo from "./assets/miniRT.webm";
 import webserverImage from "./assets/webserver.png";
 import solongVideo from "./assets/solong.webm";
+import CoinCollectorVideo from "./assets/CoinCollector.webm";
 
 function Project() {
     return (
@@ -141,6 +142,35 @@ function Project() {
             <div className="project-card">
                 <video
                     className="project-video"
+                    src={CoinCollectorVideo}
+                    controls
+                    loop
+                    muted
+                    playsInline
+                    preload="metadata"
+                >
+                    Your browser does not support the video tag.
+                </video>
+
+                <div className="project-text">
+                    <h4>
+                        <a href="https://github.com/Yuxin29/Solong.git"
+                           target="_blank"
+                           rel="noreferrer"
+                           style={{ textDecoration: "none", color: "inherit" }}>
+                           <b>CoinCollector(Python)</b>
+                        </a>
+                        <span> — a game where a robot collects coins, escapes ghosts. </span>
+                    </h4>
+                    <p> . </p>
+                    <p>
+                        Built with Python and Pygame, I implemented the movement logic, map system, collision detection, and sprite rendering, including coin collection, enemy interactions, and win/lose conditions. This project strengthened my understanding of event handling, game loops and real-time graphics, while providing experience in designing interactive gameplay and user feedback.                    </p>
+                </div>
+            </div>
+
+            {/* <div className="project-card">
+                <video
+                    className="project-video"
                     src={solongVideo}
                     controls
                     loop
@@ -157,7 +187,7 @@ function Project() {
                            target="_blank"
                            rel="noreferrer"
                            style={{ textDecoration: "none", color: "inherit" }}>
-                           <b>Mushroom_picker (C)</b>
+                           <b>MushroomPicker (C)</b>
                         </a>
                         <span> — a 2D game where a Shiba picks up boletus.</span>
                     </h4>
@@ -169,15 +199,7 @@ function Project() {
                         image rendering, and performance optimization in real-time graphics.
                     </p>
                 </div>
-            </div>
-
-            <h4>
-            <a href="https://github.com/Yuxin29/minishell" target="_blank" rel="noreferrer" style={{ textDecoration: "none", color: "inherit" }}>
-            <b>CoinDigger (Python)</b>
-            </a>
-            <span> Developed a 2D game  to enhance skills OOP and interactive interfaces. </span>
-            </h4>
-            <p>CoinDigger is a 2D grid-based game built using Python and the Pygame library. In the game, players explore a grid filled with hidden coins, and their objective is to dig and find as many coins as possible while avoiding obstacles. This project helped me sharpen my skills in Python game development, algorithms, and object-oriented programming. It also allowed me to practice creating interactive user interfaces with Pygame.</p>
+            </div> */}
 
         </div>
     );
