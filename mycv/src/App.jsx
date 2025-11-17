@@ -13,6 +13,7 @@ function MainPage() {
   return (
     <div style={{
       backgroundColor: 'white',
+      minHeight: '100vh',
       maxWidth: "800px",
       margin: "40px auto",
       fontFamily: "Arial, sans-serif",
