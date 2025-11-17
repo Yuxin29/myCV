@@ -57,9 +57,12 @@ function MainPage() {
 
 function App() {
   useEffect(() => {
-    document.documentElement.style.backgroundColor = 'white';
-    document.body.style.backgroundColor = 'white';
+    document.documentElement.style.backgroundColor = 'white'; // html
+    document.body.style.backgroundColor = 'white';            // body
+    const root = document.getElementById('root');
+    if (root) root.style.backgroundColor = 'white';           // React root div
   }, []);
+
   
   return (
     <BrowserRouter>
