@@ -1,0 +1,32 @@
+/* Contact.css */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contact-form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background: white;       /* makes background pure white */
+  color: #222;             /* dark text */
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: 2px solid #005bbb; /* blue outline when selected */
+  background: white;
+}
+
+.contact-form button {
+  padding: 10px 14px;
+  font-weight: bold;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
