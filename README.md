@@ -4,15 +4,15 @@ This is my personal portfolio website built with React + Vite, showcasing my wor
 
 🔗 Live Website: https://www.yuxinwu.eu/
 
-** Tech Stack **
-*** Frontend ***
+## Tech Stack 
+### Frontend 
   - React
   - Vite
   - JavaScript / JSX
   - CSS
-*** Backend ***
+### Backend
   - Simple JavaScript backend for processing contact form data
   - Validates and securely forwards messages
   - Runs as a Vercel serverless function
-*** Deployment ***
+### Deployment
   - Vercel (CI/CD, previews, automatic builds, serverless API routes)
